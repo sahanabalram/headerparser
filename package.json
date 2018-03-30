@@ -1,0 +1,24 @@
+{
+  "name": "headerparser",
+  "version": "1.0.0",
+  "description": "A backend project which would provide the users IP address",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahanabalram/headerparser.git"
+  },
+  "author": "Sahana Balram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahanabalram/headerparser/issues"
+  },
+  "homepage": "https://github.com/sahanabalram/headerparser#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  }
+}
