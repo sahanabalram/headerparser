@@ -14,14 +14,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(cors());
 app.use(useragent.express());
 
-// API url
-var apiURL = "/api/whoami";
-app.get(apiURL,function(request,response){
-    var language = request.acceptsLanguages();
-    var software = "OS: " + request.useragent.os +   " Browser: " + request.useragent.browser;
-    var ipAddress = request.ip;
-    response.json({"ipAddress": ipAddress, "language": language[0],"software": software});
-});
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js") (app);
 app.listen(PORT,function(){
     console.log("App is listening on:" + PORT);
 })
