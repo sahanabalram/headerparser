@@ -1,0 +1,29 @@
+body {
+    background-image: url("../images/seamless_paper.png");
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 24px;
+}
+div.container-fluid,div.container{
+    width: 960px;
+}
+.jumbotron {
+    background-color: cornsilk;
+    max-width: 100%;
+    margin-top: 60px;
+}
+
+h1.text-center {
+    color: black;
+    font-family: 'Crimson Text', serif;
+    font-weight: bolder;
+    font-size: 52px;
+}
+
+
+.footer {
+    float: left;
+    clear: both;
+}
+
+
+
